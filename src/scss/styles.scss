@@ -1,26 +1,76 @@
-// Override Bootstrap's Sass default variables
-//
-// Nearly all variables in Bootstrap are written with the `!default` flag.
-// This allows you to override the default values of those variables before
-// you import Bootstrap's source Sass files.
-//
-// Overriding the default variable values is the best way to customize your
-// CSS without writing _new_ styles. For example, change you can either change
-// `$body-color` or write more CSS that override's Bootstrap's CSS like so:
-// `body { color: red; }`.
-// For options, see node_modules/bootstrap/scss/_variables.scss
+// Define your color variables here
+$primary: #3e4047; 
+$body-bg: #f2eded; 
 
-// Examples:
+// Import Roboto Google Font
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
 
-// $body-bg: black;
-// $body-color: white;
-// $link-hover-color: grey;
-// $font-family-sans-serif: "Helvetica Neue";
+// Import Permanent Marker Google Font
+@import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap');
 
 // Import Bootstrap styles:
 @import "../../node_modules/bootstrap/scss/bootstrap";
 
-// Import partials:
-
 // Custom styles:
+
+// Navbar customization
+.navbar {
+  background-color: $navbar-background-color; // Sets the navbar color to dark grey
+
+  .nav-link {
+    color: $navbar-link-color; // Sets the navbar links color to white
+
+    &:hover {
+      text-decoration: underline; // Underlines the nav link on hover
+      color: lighten($navbar-link-color, 20%); // Optionally, lighten the link color on hover
+    }
+  }
+
+  .nav-item.active .nav-link {
+    font-weight: bold; // Boldens the active nav link
+    color: $navbar-link-color; // Ensures the active link is also white
+  }
+}
+
+// Jumbotron customization
+.jumbotron {
+  background: url('../img/pirate-ship.jpg') no-repeat center center;
+  background-size: cover;
+  color: white; // Sets the jumbotron text to white
+  text-align: center; // Centers the jumbotron text
+  font-family: 'Permanent Marker', cursive; // Sets the jumbotron font
+  padding: 6rem 0; // Adds padding to the jumbotron for spacing
+
+  h1.display-4, .lead {
+    color: inherit; // Inherits the jumbotron text color
+  }
+}
+
+// Title above the cards
+.page-title {
+  font-family: 'Roboto', sans-serif;
+  font-size: 2.5rem; // Adjust the font size as necessary
+  margin-bottom: 4rem; // Adds margin below the title for spacing
+  text-align: left;
+  margin-left: 0;
+}
+
+// Cards customization
+.card {
+  .card-title {
+    font-family: 'Roboto', sans-serif; // Sets the card title font
+    font-weight: 700; // Sets the card title font weight to bold
+  }
+  .card-text {
+    font-family: 'Roboto', sans-serif; // Sets the card text font
+  }
+}
+
+// Footer customization
+footer {
+  background-color: #7ab78e; // Sets the footer background to emerald green
+  color: white; // Sets the footer text to white
+  text-align: center; // Centers the footer text
+  padding: 1rem 0; // Adds padding to the footer for spacing
+}
 

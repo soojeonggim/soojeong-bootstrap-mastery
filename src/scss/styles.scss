@@ -1,12 +1,12 @@
 // Define your color variables here
-$primary: #3e4047; 
-$body-bg: #f2eded; 
+$primary: black; 
+$body-bg: #f2eded;
+$navbar-link-color: #fff;
 
 // Import Roboto Google Font
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
 
-// Import Permanent Marker Google Font
-@import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@400;700&display=swap');
 
 // Import Bootstrap styles:
 @import "../../node_modules/bootstrap/scss/bootstrap";
@@ -15,7 +15,7 @@ $body-bg: #f2eded;
 
 // Navbar customization
 .navbar {
-  background-color: $navbar-background-color; // Sets the navbar color to dark grey
+  background-color: $navbar-background-color;
 
   .nav-link {
     color: $navbar-link-color; // Sets the navbar links color to white
@@ -38,39 +38,41 @@ $body-bg: #f2eded;
   background-size: cover;
   color: white; // Sets the jumbotron text to white
   text-align: center; // Centers the jumbotron text
-  font-family: 'Permanent Marker', cursive; // Sets the jumbotron font
-  padding: 6rem 0; // Adds padding to the jumbotron for spacing
-
+  padding: 2rem 0; // Adjusted padding, 2rem top and bottom
   h1.display-4, .lead {
+    font-family: 'Libre Baskerville', serif; // Set Baskerville-style font
     color: inherit; // Inherits the jumbotron text color
   }
 }
+
 
 // Title above the cards
 .page-title {
   font-family: 'Roboto', sans-serif;
   font-size: 2.5rem; // Adjust the font size as necessary
-  margin-bottom: 4rem; // Adds margin below the title for spacing
+  margin-top: 0; // Reduced top margin
+  margin-bottom: 1rem; // Adds margin below the title for spacing
   text-align: left;
   margin-left: 0;
 }
 
 // Cards customization
 .card {
+  margin-top: 0; // Reduced top margin
   .card-title {
     font-family: 'Roboto', sans-serif; // Sets the card title font
-    font-weight: 700; // Sets the card title font weight to bold
+    font-weight: 500; // Sets the card title font weight to bold
   }
   .card-text {
     font-family: 'Roboto', sans-serif; // Sets the card text font
   }
 }
 
-// Footer customization
+// Footer
 footer {
-  background-color: #7ab78e; // Sets the footer background to emerald green
-  color: white; // Sets the footer text to white
-  text-align: center; // Centers the footer text
-  padding: 1rem 0; // Adds padding to the footer for spacing
+  background-color: #6e907a;
+  color: white; 
+  text-align: center; 
+  padding: 1rem 0;
 }
 

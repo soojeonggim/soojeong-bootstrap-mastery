@@ -11,6 +11,9 @@ $navbar-link-color: #fff;
 // Import Bootstrap styles:
 @import "../../node_modules/bootstrap/scss/bootstrap";
 
+// Import the article styles
+@import 'article';
+
 // Navbar customization
 .navbar {
   background-color: $navbar-background-color;
@@ -35,7 +38,7 @@ $navbar-link-color: #fff;
   background-size: cover;
   color: white;
   text-align: center;
-  padding: 2rem 0;
+  padding: 4rem 0;
   h1.display-4, .lead {
     font-family: 'Libre Baskerville', serif;
     color: inherit;
@@ -67,7 +70,7 @@ $navbar-link-color: #fff;
 
 // Footer
 footer {
-  background-color: #6e907a;
+  background-color: #6b9177;
   color: white; 
   text-align: center; 
   padding: 1rem 0;

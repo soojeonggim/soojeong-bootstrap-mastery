@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en">
+<head>
+  <title>Bootstrap 5 Layout</title>
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <!-- Navbar starts here -->
+  <nav class="navbar navbar-expand-lg bg-primary" data-bs-theme="dark">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="index.html">Pirate Cove</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavDropdown">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link" href="index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="article.html">Article</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Photos</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <!-- Navbar ends here -->
+
+  <!-- Jumbotron starts here -->
+  <div class="jumbotron jumbotron-fluid text-center">
+    <div class="container">
+      <h1 class="display-4">SHIP'S LOG</h1>
+      <p class="lead">A diary by Capt. 'Red Beard' McGillicutty</p>
+    </div>
+  </div>
+  <!-- Jumbotron ends here -->
+
+  <!-- Article content starts here -->
+  <div class="container my-5">
+    <div class="row">
+      <!-- Left column for Pirate Mugshot -->
+      <div class="col-md-4 col-lg-3">
+        <img src="path-to-your-pirate-mugshot.jpg" alt="Pirate Mugshot" class="img-fluid">
+        <p class="byline">By Capt. McGillicutty</p>
+        <p class="source">Island Breeze Tribune</p>
+      </div>
+      <!-- Right column for Article Text -->
+      <div class="col-md-8 col-lg-9">
+        <h2 class="page-title left-aligned-title">It was a dark and story night</h2>
+        <p>Prow scuttle parrel...</p>
+        <p>Deadlights jack lad schooner...</p>
+        <!-- Add more paragraphs as needed -->
+      </div>
+    </div>
+  </div>
+  <!-- Article content ends here -->
+
+  <!-- Footer starts here -->
+  <footer class="text-center py-3" style="background-color: #50C878;">
+    <div class="container">
+      <span>Site by Kraken Industries</span>
+    </div>
+  </footer>
+  <!-- Footer ends here -->
+
+  <!-- Closing scripts here -->
+  <script src="js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

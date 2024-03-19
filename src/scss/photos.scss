@@ -3,21 +3,10 @@ $body-bg: #f2eded;
 $navbar-background-color: black;
 $navbar-link-color: #fff;
 
-// Import Roboto Google Font
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
-
-@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@400;700&display=swap');
-
-// Import Bootstrap styles:
-@import "../../node_modules/bootstrap/scss/bootstrap";
-
-// Import the article styles
-@import 'article';
-
 // Navbar customization
 .navbar {
   background-color: $navbar-background-color;
-
+  
   .nav-link {
     color: $navbar-link-color;
     &:hover {
@@ -25,7 +14,7 @@ $navbar-link-color: #fff;
       color: lighten($navbar-link-color, 20%);
     }
   }
-
+  
   .nav-item.active .nav-link {
     font-weight: bold;
     color: $navbar-link-color;
@@ -39,16 +28,23 @@ $navbar-link-color: #fff;
   color: white;
   text-align: center;
   padding: 4rem 0;
+  
   h1.display-4, .lead {
     font-family: 'Libre Baskerville', serif;
     color: inherit;
   }
 }
 
-// Footer
+// Adjusting space around the carousel
+#carouselExampleCaptions {
+  margin-top: 2rem; // Adds space below the Jumbotron
+  margin-bottom: 2rem; // Adds space above the footer
+}
+
+// Footer customization
 footer {
   background-color: #6b9177;
-  color: white; 
-  text-align: center; 
+  color: white;
+  text-align: center;
   padding: 1rem 0;
 }

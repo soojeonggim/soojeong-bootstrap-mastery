@@ -11,8 +11,9 @@ $navbar-link-color: #fff;
 // Import Bootstrap styles:
 @import "../../node_modules/bootstrap/scss/bootstrap";
 
-// Import the article styles
+// Import the article / photos styles
 @import 'article';
+@import 'photos';
 
 // Navbar customization
 .navbar {

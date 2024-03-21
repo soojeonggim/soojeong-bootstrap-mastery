@@ -39,7 +39,7 @@ $navbar-link-color: #fff;
   background-size: cover;
   color: white;
   text-align: center;
-  padding: 4rem 0;
+  padding: 5rem 0;
   h1.display-4, .lead {
     font-family: 'Libre Baskerville', serif;
     color: inherit;
@@ -55,6 +55,7 @@ $navbar-link-color: #fff;
   margin-bottom: 1rem;
   text-align: left;
   margin-left: 0;
+  font-weight: bold;
 }
 
 // Cards customization
@@ -71,7 +72,7 @@ $navbar-link-color: #fff;
 
 // Footer
 footer {
-  background-color: #6b9177;
+  background-color: #56625a;
   color: white; 
   text-align: center; 
   padding: 1rem 0;

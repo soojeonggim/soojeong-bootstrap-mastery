@@ -3,25 +3,26 @@ $body-bg: #f2eded;
 $navbar-background-color: black;
 $navbar-link-color: #fff;
 
-// Navbar customization
+// Navbar
 .navbar {
   background-color: $navbar-background-color;
   
   .nav-link {
-    color: $navbar-link-color;
+    color: rgba(255, 255, 255, 0.5); // Less active color
+    
+    &.active {
+      font-weight: bold;
+      color: $navbar-link-color; // Active color, using variable
+    }
+    
     &:hover {
       text-decoration: underline;
-      color: lighten($navbar-link-color, 20%);
+      color: lighten($navbar-link-color, 20%); // Lightens the color on hover
     }
-  }
-  
-  .nav-item.active .nav-link {
-    font-weight: bold;
-    color: $navbar-link-color;
   }
 }
 
-// Jumbotron customization
+// Jumbotron
 .jumbotron {
   background: url('../img/pirate-ship.jpg') no-repeat center center;
   background-size: cover;
@@ -41,9 +42,9 @@ $navbar-link-color: #fff;
   margin-bottom: 2rem; // Adds space above the footer
 }
 
-// Footer customization
+// Footer
 footer {
-  background-color: #56625a;
+  background-color: #565c58;
   color: white;
   text-align: center;
   padding: 1rem 0;

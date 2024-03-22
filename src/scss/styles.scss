@@ -1,39 +1,41 @@
-$primary: black; 
+$primary-color: #333;
 $body-bg: #f2eded;
+$font-family-main: 'Roboto', sans-serif;
+$font-family-title: 'Libre Baskerville', serif;
 $navbar-background-color: black;
 $navbar-link-color: #fff;
+$navbar-link-color-active: #fff; // Active color for the link
+$navbar-link-color-inactive: rgba(255, 255, 255, 0.5); // Inactive color for the link
 
-// Import Roboto Google Font
+// Import fonts
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
-
 @import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@400;700&display=swap');
 
-// Import Bootstrap styles:
+// Import Bootstrap and other partials
 @import "../../node_modules/bootstrap/scss/bootstrap";
-
-// Import the article / photos styles
 @import 'article';
 @import 'photos';
 
-// Navbar customization
+// Navbar styles
 .navbar {
   background-color: $navbar-background-color;
 
   .nav-link {
-    color: $navbar-link-color;
+    color: $navbar-link-color-inactive; // Use the inactive color by default
+
+    &.active {
+      color: $navbar-link-color-active; // Use the active color when .active class is applied
+      font-weight: bold;
+    }
+
     &:hover {
       text-decoration: underline;
-      color: lighten($navbar-link-color, 20%);
+      color: lighten($navbar-link-color, 20%); // Lighten color on hover
     }
-  }
-
-  .nav-item.active .nav-link {
-    font-weight: bold;
-    color: $navbar-link-color;
   }
 }
 
-// Jumbotron customization
+// Jumbotron
 .jumbotron {
   background: url('../img/pirate-ship.jpg') no-repeat center center;
   background-size: cover;
@@ -46,19 +48,18 @@ $navbar-link-color: #fff;
   }
 }
 
-
 // Title above the cards
 .page-title {
   font-family: 'Roboto', sans-serif;
   font-size: 2.5rem;
   margin-top: 0;
-  margin-bottom: 1rem;
+  margin-bottom: 0.5rem;
   text-align: left;
   margin-left: 0;
   font-weight: bold;
 }
 
-// Cards customization
+// Cards
 .card {
   margin-top: 0;
   .card-title {
@@ -72,9 +73,10 @@ $navbar-link-color: #fff;
 
 // Footer
 footer {
-  background-color: #56625a;
+  background-color: #565c58;
   color: white; 
   text-align: center; 
   padding: 1rem 0;
 }
+
 

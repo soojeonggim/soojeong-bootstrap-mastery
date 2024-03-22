@@ -4,8 +4,8 @@ $font-family-main: 'Roboto', sans-serif;
 $font-family-title: 'Libre Baskerville', serif;
 $navbar-background-color: black;
 $navbar-link-color: #fff;
-$navbar-link-color-active: #fff; // Active color for the link
-$navbar-link-color-inactive: rgba(255, 255, 255, 0.5); // Inactive color for the link
+$navbar-link-color-active: #fff;
+$navbar-link-color-inactive: rgba(255, 255, 255, 0.5);
 
 // Import fonts
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
@@ -16,21 +16,21 @@ $navbar-link-color-inactive: rgba(255, 255, 255, 0.5); // Inactive color for the
 @import 'article';
 @import 'photos';
 
-// Navbar styles
+// Navbar
 .navbar {
   background-color: $navbar-background-color;
 
   .nav-link {
-    color: $navbar-link-color-inactive; // Use the inactive color by default
+    color: $navbar-link-color-inactive;
 
     &.active {
-      color: $navbar-link-color-active; // Use the active color when .active class is applied
+      color: $navbar-link-color-active;
       font-weight: bold;
     }
 
     &:hover {
       text-decoration: underline;
-      color: lighten($navbar-link-color, 20%); // Lighten color on hover
+      color: lighten($navbar-link-color, 20%);
     }
   }
 }

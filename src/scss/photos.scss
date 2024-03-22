@@ -8,16 +8,16 @@ $navbar-link-color: #fff;
   background-color: $navbar-background-color;
   
   .nav-link {
-    color: rgba(255, 255, 255, 0.5); // Less active color
+    color: rgba(255, 255, 255, 0.5);
     
     &.active {
       font-weight: bold;
-      color: $navbar-link-color; // Active color, using variable
+      color: $navbar-link-color;
     }
     
     &:hover {
       text-decoration: underline;
-      color: lighten($navbar-link-color, 20%); // Lightens the color on hover
+      color: lighten($navbar-link-color, 20%);
     }
   }
 }
@@ -38,8 +38,8 @@ $navbar-link-color: #fff;
 
 // Adjusting space around the carousel
 #carouselExampleCaptions {
-  margin-top: 2rem; // Adds space below the Jumbotron
-  margin-bottom: 2rem; // Adds space above the footer
+  margin-top: 2rem;
+  margin-bottom: 2rem;
 }
 
 // Footer
